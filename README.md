@@ -10,7 +10,13 @@ This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpack) for
 
 Example usage:
 
-    $ heroku create --buildpack https://github.com/jaguado/dotnet-buildpack-vs2017.git
+    $ heroku create --buildpack https://github.com/hydrix9/dotnet-buildpack-vs2017.git
     $ git push heroku master
+
+OR
+```
+    $ heroku buildpacks:set https://github.com/hydrix9/dotnet-buildpack-vs
+    $ git push heroku master
+```
 
 The buildpack will detect your app as .NET Core if it has `.csproj`. If the source code you want to build contains multiple `.csproj` files, you can use a [`.deployment`](https://github.com/projectkudu/kudu/wiki/Customizing-deployments) or set a `$PROJECT` config var to control which one is built.
