@@ -15,7 +15,7 @@ Example usage:
 
 OR
 ```
-    $ heroku buildpacks:set https://github.com/hydrix9/dotnet-buildpack-vs
+    $ heroku buildpacks:set https://github.com/hydrix9/dotnet-buildpack-vs2017
     $ git push heroku master
 ```
 
