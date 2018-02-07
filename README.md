@@ -1,3 +1,5 @@
+this fork uses [2.1.4 SDK as detailed here](https://github.com/dotnet/core/blob/master/release-notes/releases.csv)
+
 **Please note:** This buildpack is an experimental project and is not officially supported.
 
 # .NET Core Buildpack
