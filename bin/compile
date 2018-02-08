@@ -99,7 +99,7 @@ if [ -n "$PROJECT" ]; then
 	PROJECT_FILE=${SRC_DIR}/${PROJECT}
 	echo "Project file configured in PROJECT environment variable"
 elif [ -e ${DEPLOYMENT_FILE_LOCATION} ]; then
-	PROJECT_NAME=$(awk -F "=" '/project/ {print $2}' ${DEPLOYMENT_FILE_LOCATION} | tr -d ' ')
+	PROJECT_NAME=$(awk -F "=" '/project-name/ {print $2}' ${DEPLOYMENT_FILE_LOCATION} | tr -d ' ')
 	PROJECT_FILE=${SRC_DIR}/${PROJECT_NAME}
 	echo "Project file configured in .deployment file: ${PROJECT_FILE}"
 	echo "Project name configured in .deployment file: ${PROJECT_NAME}"
